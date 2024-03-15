@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "poDdlE76CpMKN2YnpFiJuAISQDC9HbzaQQk9F8N65R/stjPstFIKfu+K5gBh4iA4Jbe9HTJf03N4xgWmqaaxWw==",
+  "dgSpecHash": "ZVnIr0LwnD0yqlyVCwR9HttgfpZMLwrP0NPA8WZGUxlCxkgLu2OiQ0bMzjtqd0frUJ60h1MxPXlaK5db0+mboA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Connection\\Connection.csproj",
+  "projectFilePath": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Connection\\Connection.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",

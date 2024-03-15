@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Connection\\Connection.csproj": {}
+    "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Connection\\Connection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Connection\\Connection.csproj": {
+    "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Connection\\Connection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Connection\\Connection.csproj",
+        "projectUniqueName": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Connection\\Connection.csproj",
         "projectName": "Connection",
-        "projectPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Connection\\Connection.csproj",
+        "projectPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Connection\\Connection.csproj",
         "packagesPath": "C:\\Users\\hamon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Connection\\obj\\",
+        "outputPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Connection\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

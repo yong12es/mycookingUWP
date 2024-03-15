@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\mycooking.csproj": {}
+    "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\mycooking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\mycooking.csproj": {
+    "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\mycooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\mycooking.csproj",
+        "projectUniqueName": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\mycooking.csproj",
         "projectName": "mycooking",
-        "projectPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\mycooking.csproj",
+        "projectPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\mycooking.csproj",
         "packagesPath": "C:\\Users\\hamon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\obj\\",
+        "outputPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

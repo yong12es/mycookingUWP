@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e214aa26-30de-4719-a281-2216749b87db</PackageIdentityName>
     <PackageIdentityPublisher>CN=hamon</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\hamon\Documents\GitHub\mycooking\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\mycooking.exe">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\mycooking.exe">
       <PackagePath>entrypoint\mycooking.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,264 +34,264 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\My_CookingTransparente.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\My_CookingTransparente.png">
       <PackagePath>Assets\My_CookingTransparente.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\password_icon.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\password_icon.png">
       <PackagePath>Assets\password_icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\password_icon2.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\password_icon2.png">
       <PackagePath>Assets\password_icon2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\password_icon4.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\password_icon4.png">
       <PackagePath>Assets\password_icon4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\password_icon7.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\password_icon7.png">
       <PackagePath>Assets\password_icon7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\mycooking.xr.xml">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\mycooking.xr.xml">
       <PackagePath>mycooking.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\DashboardPage.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\DashboardPage.xbf">
       <PackagePath>Views\DashboardPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\FiltrarIngredientesPage.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\FiltrarIngredientesPage.xbf">
       <PackagePath>Views\FiltrarIngredientesPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\InicioPage.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\InicioPage.xbf">
       <PackagePath>Views\InicioPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\ListaTalleresPage.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\ListaTalleresPage.xbf">
       <PackagePath>Views\ListaTalleresPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\Login.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\Login.xbf">
       <PackagePath>Views\Login.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\RecetasMundoPag.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\RecetasMundoPag.xbf">
       <PackagePath>Views\RecetasMundoPag.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Views\Register.xbf">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\Register.xbf">
       <PackagePath>Views\Register.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycooking\bin\x86\Debug\Core\mycooking.exe">
+    <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Core\mycooking.exe">
       <PackagePath>mycooking.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

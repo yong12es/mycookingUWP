@@ -26,5 +26,10 @@ namespace mycooking.Views
         {
             this.InitializeComponent();
         }
+
+        private void CountryButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(InicioPage));
+        }
     }
 }

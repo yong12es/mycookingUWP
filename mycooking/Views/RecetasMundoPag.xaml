@@ -9,11 +9,70 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel Margin="20">
-            <!-- Texto de ejemplo -->
-            <TextBlock Text="Bienvenido a Recetas del Mundo" FontSize="24" Margin="0,0,0,20"/>
-            <!-- Aquí puedes agregar más contenido relacionado con las recetas del mundo -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#FFA500" Offset="0"/>
+                <GradientStop Color="Gray" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel Margin="20,20,20,20">
+            
+
+            <Grid Height="100"/>
+            <StackPanel Height="100"/>
+            
         </StackPanel>
+        <TextBox HorizontalAlignment="Left" Margin="892,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="228" PlaceholderText="buscar"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,90,0,0" TextWrapping="Wrap" Text="Bienvenido a recetas del mundo" VerticalAlignment="Top" Height="49" Width="528" FontSize="36"/>
+        <Button Content="Buscar" Margin="1125,93,0,0" VerticalAlignment="Top" Height="42" Width="70"/>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,438,0,116" Width="1131">
+            <StackPanel Orientation="Horizontal" Width="884" Height="235">
+                <Button Click="CountryButton_Click" Margin="10" Width="158" Height="148">
+                    <Grid>
+                        <Image Source="YourImageSource.jpg" Width="100" Height="100" Margin="0,0,0,10"/>
+                        <TextBlock Text="País 1" HorizontalAlignment="Center"/>
+                    </Grid>
+                </Button>
+                <Button Click="CountryButton_Click" Margin="168,10,10,10" Width="158" Height="148">
+                    <Grid>
+                        <Image Source="YourImageSource.jpg" Width="100" Height="100" Margin="0,0,0,10"/>
+                        <TextBlock Text="País 2" HorizontalAlignment="Center"/>
+                    </Grid>
+                </Button>
+                <Button Click="CountryButton_Click" Margin="176,10,10,10" Width="158" Height="148">
+                    <Grid>
+                        <Image Source="YourImageSource.jpg" Width="100" Height="100" Margin="0,0,0,10"/>
+                        <TextBlock Text="País 3" HorizontalAlignment="Center"/>
+                    </Grid>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="884">
+                <Button Click="CountryButton_Click" Margin="10" Height="148" Width="158">
+                    <Grid>
+                        <Image Source="YourImageSource.jpg" Width="100" Height="100" Margin="0,0,0,10"/>
+                        <TextBlock Text="País 4" HorizontalAlignment="Center"/>
+                    </Grid>
+                </Button>
+                <Button Click="CountryButton_Click" Margin="168,10,10,10" Height="147" Width="158">
+                    <Grid>
+                        <Image Source="YourImageSource.jpg" Width="100" Height="100" Margin="0,0,0,10"/>
+                        <TextBlock Text="País 5" HorizontalAlignment="Center"/>
+                    </Grid>
+                </Button>
+                <Button Click="CountryButton_Click" Margin="176,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="158" Height="148">
+                    <Grid>
+                        <Image Source="YourImageSource.jpg" Width="100" Height="100" Margin="0,0,0,10"/>
+                        <TextBlock Text="País 6" HorizontalAlignment="Center"/>
+                    </Grid>
+                </Button>
+            </StackPanel>
+            
+        </StackPanel>
+
+
+
 
     </Grid>
 </Page>

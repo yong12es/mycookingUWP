@@ -56,5 +56,7 @@ namespace mycooking.Views
             // Navega hacia la página de recetas del mundo
             MainContentFrame.Navigate(typeof(RecetasMundoPag));
         }
+
+        
     }
 }

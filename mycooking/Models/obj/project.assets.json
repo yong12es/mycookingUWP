@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Models\\Models.csproj",
+      "projectPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\hamon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycooking\\Models\\obj\\",
+      "outputPath": "C:\\Users\\hamon\\Documents\\GitHub\\mycookingUWP\\mycooking\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
