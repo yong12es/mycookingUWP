@@ -13,6 +13,12 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using mycooking.Services;
+using System.Text.RegularExpressions;
+using System.Net.Http;
+
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace mycooking.Views
@@ -22,27 +28,52 @@ namespace mycooking.Views
     /// </summary>
     public sealed partial class Login : Page
     {
+        private ApiService _apiService;
         public Login()
         {
             this.InitializeComponent();
+            _apiService = new ApiService();
         }
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Aquí puedes verificar las credenciales
-            string username = txtUsername.Text;
-            string password = txtPassword.Password;
+            string correo = txtUsername.Text;
+            string contrasenya = txtPassword.Password;
 
-            // Ejemplo de verificación de credenciales (¡reemplaza con tu lógica real!)
-            if (username == "usuario" && password == "contraseña")
+            if (!IsValidEmail(correo))
             {
-                // Las credenciales son válidas, puedes redirigir a otra página
-                //Frame.Navigate(typeof(OtraPagina)); // Reemplaza 'OtraPagina' con el nombre de tu siguiente página
+                txtMessage.Text = "Formato de correo electrónico inválido.";
+                return;
             }
-            else
+            try
             {
-                // Las credenciales son inválidas, muestra un mensaje de error
-                txtMessage.Text = "Credenciales incorrectas. Por favor, inténtalo de nuevo.";
+                // Enviar las credenciales al servidor
+                bool loginSuccessful = await _apiService.Login(correo, contrasenya);
+
+                if (loginSuccessful)
+                {
+                    // El inicio de sesión fue exitoso, puedes redirigir al usuario a la siguiente página
+                    txtMessage.Text = "Inicio de sesión correcto.";
+                    Frame.Navigate(typeof(DashboardPage), correo);
+
+                }
+                else
+                {
+                    // El inicio de sesión falló, muestra un mensaje de error al usuario
+                    txtMessage.Text = "Inicio de sesión fallido. Verifique sus credenciales.";
+                }
             }
+            catch (Exception ex)
+            {
+                txtMessage.Text = "Error: " + ex.Message;
+            }
+        }
+        private bool IsValidEmail(string email)
+        {
+            // Expresión regular para validar el formato del correo electrónico
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+            // Verificar si el correo electrónico coincide con el patrón
+            return Regex.IsMatch(email, pattern);
         }
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {

@@ -1,8 +1,11 @@
-﻿using System;
+﻿using mycooking.Services;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,15 +25,58 @@ namespace mycooking.Views
     /// </summary>
     public sealed partial class Register : Page
     {
+        private ApiService _apiService;
         public Register()
         {
             this.InitializeComponent();
+            _apiService = new ApiService();
         }
 
-        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             // Aquí iría la lógica para registrar al usuario
+            string correo = txtEmail.Text;
+            string contrasenya = txtPassword.Password;
 
+            if (!IsValidEmail(correo))
+            {
+                txtMessage.Text = "Formato de correo electrónico inválido.";
+                return;
+            }
+            try
+            {
+                // Enviar los datos del usuario al servidor para registrar
+                var response = await _apiService.Register(correo, contrasenya);
+
+                // El registro fue exitoso, mostrar un mensaje de éxito
+                txtMessage.Text = "Registro exitoso. Ahora puedes iniciar sesión.";
+
+                // Después de un registro exitoso, redirigir al usuario a la página de inicio de sesión
+                Frame.Navigate(typeof(Login));
+            }
+            catch (HttpRequestException ex)
+            {
+                // Manejar el caso en que ocurra un error en la solicitud HTTP
+                txtMessage.Text = "Error: " + ex.Message;
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier otro tipo de error
+                txtMessage.Text = "Error: " + ex.Message;
+            }
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            // Expresión regular para validar el formato del correo electrónico
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+            // Verificar si el correo electrónico coincide con el patrón
+            return Regex.IsMatch(email, pattern);
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
             Frame.Navigate(typeof(Login));
         }
     }

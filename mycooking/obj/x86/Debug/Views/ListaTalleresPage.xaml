@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="mycooking.Views.ListaTalleresPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:mycooking.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#FFA500" Offset="0"/>
+                <GradientStop Color="Gray" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <!-- Encabezado -->
+        <StackPanel Margin="20" Grid.Row="0">
+            <TextBlock Text="Lista de Talleres" FontSize="24" Margin="0,0,0,20"/>
+        </StackPanel>
+
+        <!-- Contenido de la lista de talleres -->
+        <StackPanel Margin="48,64,750,118" Grid.Row="1">
+            <!-- Taller 1 -->
+            <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="0,0,0,20">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Taller 1" FontSize="18" Margin="0,0,0,10"/>
+                    <TextBlock Text="Descripción del taller 1" TextWrapping="Wrap"/>
+                    <TextBlock Text="Fecha: 10 de marzo de 2024" FontSize="14" Margin="0,10,0,0"/>
+                    <TextBlock Text="Lugar: Sala de cocina" FontSize="14" Margin="0,5,0,0"/>
+                    <Button Content="Participar" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Taller 2 -->
+            <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="0,0,0,20">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Taller 2" FontSize="18" Margin="0,0,0,10"/>
+                    <TextBlock Text="Descripción del taller 2" TextWrapping="Wrap"/>
+                    <TextBlock Text="Fecha: 15 de marzo de 2024" FontSize="14" Margin="0,10,0,0"/>
+                    <TextBlock Text="Lugar: Cocina central" FontSize="14" Margin="0,5,0,0"/>
+                    <Button Content="Participar" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Taller 3 -->
+            <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="0,0,0,20">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Taller 3" FontSize="18" Margin="0,0,0,10"/>
+                    <TextBlock Text="Descripción del taller 3" TextWrapping="Wrap"/>
+                    <TextBlock Text="Fecha: 20 de marzo de 2024" FontSize="14" Margin="0,10,0,0"/>
+                    <TextBlock Text="Lugar: Cocina experimental" FontSize="14" Margin="0,5,0,0"/>
+                    <Button Content="Participar" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Agregar más talleres según sea necesario -->
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="954,64,102,294" Grid.Row="1">
+            <ListView ItemsSource="{Binding ListaDeTalleres}" Margin="116,0,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="0,0,0,20">
+                            <StackPanel Margin="10">
+                                <TextBlock Text="{Binding Nombre}" FontSize="18" Margin="0,0,0,10"/>
+                                <TextBlock Text="{Binding Descripcion}" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding Fecha}" FontSize="14" Margin="0,10,0,0"/>
+                                <TextBlock Text="{Binding Lugar}" FontSize="14" Margin="0,5,0,0"/>
+                                <Button Content="Participar" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="954,35,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Sus talleres" VerticalAlignment="Top" FontSize="18"/>
+    </Grid>
+</Page>
+

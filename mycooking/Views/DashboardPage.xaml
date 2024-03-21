@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -36,8 +37,12 @@
         </StackPanel>
         <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="10">
             <StackPanel Orientation="Horizontal">
+                <Button Click="LogoutButton_Click">
+                    <SymbolIcon Symbol="Back"/>
+                </Button>
                 <SymbolIcon Symbol="Contact" Height="50" Width="50" Margin="-6,0,0,0"/>
-                <TextBlock Text="Usuario" FontSize="16" Margin="10,13,3,0"/>
+                <TextBlock x:Name="txtUsuario" FontSize="16" Margin="10,13,3,0"/>
+                
             </StackPanel>
         </StackPanel>
         

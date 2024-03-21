@@ -23,38 +23,39 @@
 
         <!-- Contenido -->
         <StackPanel Margin="110">
-            <!-- Nombre de la receta -->
+            
             <TextBlock Text="Nombre de la Receta" FontSize="18"/>
             <TextBox x:Name="NombreRecetaTextBox" PlaceholderText="Ingrese el nombre de la receta" Margin="0,5,0,20"/>
 
-            <!-- Descripción -->
+            
             <TextBlock Text="Descripción" FontSize="18"/>
             <TextBox x:Name="DescripcionTextBox" PlaceholderText="Ingrese la descripción de la receta" Margin="0,5,0,20"/>
 
-            <!-- Instrucciones -->
+            
             <TextBlock Text="Instrucciones" FontSize="18"/>
             <TextBox x:Name="InstruccionesTextBox" PlaceholderText="Ingrese las instrucciones de la receta" Margin="0,5,0,20"/>
 
             <!-- Ingredientes -->
             <TextBlock Text="Ingredientes" FontSize="18"/>
             <StackPanel x:Name="IngredientesStackPanel" Margin="0,5,0,20">
-                <!-- Campo para un ingrediente -->
+                
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
                     <TextBox PlaceholderText="Ingrediente" Width="150"/>
                     <TextBox PlaceholderText="Cantidad" Width="100" Margin="10,0,0,0"/>
                 </StackPanel>
             </StackPanel>
 
-            <!-- Botón para agregar más ingredientes -->
+            
             <Button Content="Agregar Ingrediente" Click="AgregarIngrediente_Click" Margin="0,0,0,20"/>
 
             <!-- Imagen -->
             <TextBlock Text="Imagen" FontSize="18"/>
-            <!-- Aquí puedes agregar la funcionalidad para cargar una imagen -->
+            
             <Button Content="Cargar Imagen" Click="CargarImagen_Click" Margin="0,5,0,20"/>
+            <Image x:Name="miImagenControl" Stretch="Uniform" Height="224" Width="388"/>
         </StackPanel>
 
-        <!-- Botón para crear la receta -->
+        
         <Button Content="Crear Receta" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Click="CrearReceta_Click" Margin="0,0,0,20"/>
     </Grid>
 </Page>

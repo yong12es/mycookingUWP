@@ -158,3 +158,14 @@ C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\qualifiers.
 C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638194388980000000.json
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\CrearRecetaPage.g.i.cs
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\CrearRecetaPage.g.cs
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\ListaCompraPag.g.i.cs
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\ListaCompraPag.g.cs
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\CrearRecetaPage.xaml
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\ListaCompraPag.xaml
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\CrearRecetaPage.xbf
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\obj\x86\Debug\Views\ListaCompraPag.xbf
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\CrearRecetaPage.xbf
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\ListaCompraPag.xbf
+C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Newtonsoft.Json.dll
