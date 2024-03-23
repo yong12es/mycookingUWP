@@ -17,17 +17,20 @@ namespace mycooking.Services
 {
     public class ApiService
     {
-        private static readonly HttpClient _client = new HttpClient();
-        public string _accessToken;
+        private static ApiService _instance;
+        private readonly HttpClient _client = new HttpClient();
+        private string _accessToken;
+
+
 
         public string AccessToken
         {
             get { return _accessToken; }
             private set { _accessToken = value; }
         }
-        public ApiService()
+        private ApiService()
         {
-            // Configura la dirección base en el constructor una sola vez
+            // Configurar la dirección base en el constructor una sola vez
             if (_client.BaseAddress == null)
             {
                 _client.BaseAddress = new Uri("http://localhost:9098/");
@@ -35,6 +38,19 @@ namespace mycooking.Services
                 _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
         }
+        public static ApiService GetInstance()
+        {
+            // Si no existe una instancia, crear una nueva
+            if (_instance == null)
+            {
+                _instance = new ApiService();
+            }
+            return _instance;
+        }
+        public void SetAccessToken(string token)
+    {
+        AccessToken = token;
+    }
 
         //Login
         public async Task<bool> Login(string correo, string contrasenya)
@@ -50,21 +66,18 @@ namespace mycooking.Services
                 {
                     var responseData = await response.Content.ReadAsStringAsync();
                     Debug.WriteLine("Respuesta del servidor: " + responseData);
-                    _accessToken = JsonConvert.DeserializeObject<TokenResponse>(responseData).AccessToken;
-                    Debug.WriteLine("Token de acceso obtenido: " + _accessToken);
 
-                    ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
-                    localSettings.Values["AccessToken"] = _accessToken;
-
-
-                    // Deserializar la respuesta del servidor para obtener el token
+                    // Obtener el token de acceso desde la respuesta y guardarlo en el objeto ApiService
                     var tokenResponse = JsonConvert.DeserializeObject<TokenResponse>(responseData);
-
-                    // Verificar si se obtuvo el token correctamente
                     if (tokenResponse != null && !string.IsNullOrEmpty(tokenResponse.AccessToken))
                     {
-                        _accessToken = tokenResponse.AccessToken;
-                        Debug.WriteLine("Token obtenido después del inicio de sesión: " + _accessToken);
+                        AccessToken = tokenResponse.AccessToken;
+
+                        // Guardar el token de acceso en el almacenamiento local para persistencia
+                        ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+                        localSettings.Values["AccessToken"] = AccessToken;
+
+                        Debug.WriteLine("Token de acceso obtenido: " + AccessToken);
                         return true;
                     }
                     else
@@ -80,7 +93,6 @@ namespace mycooking.Services
             }
             catch (Exception ex)
             {
-                // Manejar cualquier excepción que pueda ocurrir durante el inicio de sesión
                 Debug.WriteLine("Error al iniciar sesión: " + ex.Message);
                 return false;
             }
@@ -109,34 +121,52 @@ namespace mycooking.Services
         {
             try
             {
-                // Asegúrate de que tengas el token de autenticación
-                if (string.IsNullOrEmpty(_accessToken))
+                ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+                string accessToken = localSettings.Values["AccessToken"] as string;
+                // Asegurarse de que se tenga el token de autenticación
+                if (string.IsNullOrEmpty(AccessToken))
                 {
-                    throw new InvalidOperationException("Debe iniciar sesión antes de crear una receta.CrearRecetaApiservice");
+                    throw new InvalidOperationException("Debe iniciar sesión antes de crear una receta.");
                 }
 
                 var json = JsonConvert.SerializeObject(receta);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                // Configura el encabezado de autorización aquí
-                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _accessToken);
+                // Configurar el encabezado de autorización con el token de acceso
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AccessToken);
 
-                // Realiza la solicitud con la instancia existente de HttpClient
+                // Realizar la solicitud con la instancia existente de HttpClient
                 HttpResponseMessage response = await _client.PostAsync("recetas", content);
+
+                string responseContent = await response.Content.ReadAsStringAsync();
+                Debug.WriteLine("Respuesta del servidor: " + responseContent);
+
+                // Verificar si la respuesta indica un error de "Unauthorized"
+                if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    throw new UnauthorizedAccessException("No tienes permiso para realizar esta acción. Por favor, inicia sesión nuevamente.");
+                }
+
                 if (response.IsSuccessStatusCode)
                 {
-                    // Receta creada exitosamente
                     Debug.WriteLine("Receta creada exitosamente.");
+                    // Aquí puedes mostrar el mensaje de éxito o realizar otras operaciones relacionadas con el éxito
                 }
                 else
                 {
                     throw new HttpRequestException($"Error al crear la receta. Código de estado: {response.StatusCode}");
                 }
             }
+            catch (UnauthorizedAccessException ex)
+            {
+                Debug.WriteLine("Error al crear la receta: " + ex.Message);
+
+                // Manejar la excepción aquí
+            }
             catch (Exception ex)
             {
                 Debug.WriteLine("Error al crear la receta: " + ex.Message);
-                throw; // Re-lanzar la excepción para que la aplicación pueda manejarla adecuadamente
+                // Otras excepciones pueden ser manejadas aquí si es necesario
             }
         }
 

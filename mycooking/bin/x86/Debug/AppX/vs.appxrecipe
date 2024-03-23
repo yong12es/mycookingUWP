@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-23T12:01:11.167</Modified>
+      <Modified>2024-03-23T16:09:57.283</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\mycooking.exe">
       <PackagePath>entrypoint\mycooking.exe</PackagePath>
-      <Modified>2024-03-23T12:01:10.361</Modified>
+      <Modified>2024-03-23T16:09:56.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\.nuget\packages\newtonsoft.json\13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -334,47 +334,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\CrearRecetaPage.xbf">
       <PackagePath>Views\CrearRecetaPage.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\DashboardPage.xbf">
       <PackagePath>Views\DashboardPage.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\FiltrarIngredientesPage.xbf">
       <PackagePath>Views\FiltrarIngredientesPage.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\InicioPage.xbf">
       <PackagePath>Views\InicioPage.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\ListaCompraPag.xbf">
       <PackagePath>Views\ListaCompraPag.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\ListaTalleresPage.xbf">
       <PackagePath>Views\ListaTalleresPage.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\Login.xbf">
       <PackagePath>Views\Login.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.219</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\RecetasMundoPag.xbf">
       <PackagePath>Views\RecetasMundoPag.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.234</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Views\Register.xbf">
       <PackagePath>Views\Register.xbf</PackagePath>
-      <Modified>2024-03-23T12:01:10.234</Modified>
+      <Modified>2024-03-23T16:09:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -386,7 +386,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamon\Documents\GitHub\mycookingUWP\mycooking\bin\x86\Debug\Core\mycooking.exe">
       <PackagePath>mycooking.exe</PackagePath>
-      <Modified>2024-03-23T12:01:11.167</Modified>
+      <Modified>2024-03-23T16:09:57.267</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

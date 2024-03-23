@@ -29,7 +29,7 @@ namespace mycooking.Views
         public Register()
         {
             this.InitializeComponent();
-            _apiService = new ApiService();
+            _apiService = ApiService.GetInstance();
         }
 
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)

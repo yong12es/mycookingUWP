@@ -18,6 +18,8 @@ using Newtonsoft.Json;
 using mycooking.Services;
 using System.Text.RegularExpressions;
 using System.Net.Http;
+using Newtonsoft.Json.Linq;
+using Windows.Services.Maps;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,12 +34,13 @@ namespace mycooking.Views
         public Login()
         {
             this.InitializeComponent();
-            _apiService = new ApiService();
+            _apiService = ApiService.GetInstance();
         }
      private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string correo = txtUsername.Text;
             string contrasenya = txtPassword.Password;
+
 
             if (!IsValidEmail(correo))
             {
@@ -53,6 +56,8 @@ namespace mycooking.Views
                 {
                     // El inicio de sesión fue exitoso, puedes redirigir al usuario a la siguiente página
                     txtMessage.Text = "Inicio de sesión correcto.";
+                    
+
                     Frame.Navigate(typeof(DashboardPage), correo);
 
                 }

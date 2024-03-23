@@ -22,6 +22,8 @@ using System.Diagnostics;
 using System.Net.Http.Headers;
 using mycooking.Services;
 using mycooking.Models;
+using Windows.Services.Maps;
+using Windows.Media.Protection.PlayReady;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -34,12 +36,13 @@ namespace mycooking.Views
     {
         
         private StorageFile imagenSeleccionada;
+
         private ApiService _apiService;
 
         public CrearRecetaPage()
         {
             this.InitializeComponent();
-            _apiService = new ApiService();
+            _apiService = ApiService.GetInstance();
         }
 
         private void AgregarIngrediente_Click(object sender, RoutedEventArgs e)
@@ -66,18 +69,21 @@ namespace mycooking.Views
 
         private async void CrearReceta_Click(object sender, RoutedEventArgs e)
         {
-           
+
             try
-            {
-             //De aqui no pasa  
+            {            
+                // Verificar si el token de acceso está vacío
                 if (string.IsNullOrEmpty(_apiService.AccessToken))
                 {
                     // El token de acceso está vacío, mostrar un mensaje de error
-
-                    Debug.WriteLine("_accestoken:" + _apiService._accessToken);
-                    Debug.WriteLine("AccesToekn" + _apiService.AccessToken);
-                    MostrarMensaje("Debe iniciar sesión antes de crear una receta Receta.Page El token de acceso está vacío.");
+                    Debug.WriteLine("El token de acceso está vacío.");
+                    MostrarMensaje("Debe iniciar sesión antes de crear una receta. El token de acceso está vacío.");
                     return;
+                }
+                else
+                {
+                    // Mostrar el contenido del token de acceso en la consola de depuración
+                    Debug.WriteLine("Contenido del token de acceso: primera linea" + _apiService.AccessToken);
                 }
 
                 string nombre = NombreRecetaTextBox.Text;
@@ -91,17 +97,24 @@ namespace mycooking.Views
                 Descripcion = descripcion,
                 Instrucciones = instrucciones
             };
+               
 
-           
+
                 // Crear la receta usando ApiService
                 await _apiService.CrearReceta(receta);
 
                 // Mostrar un mensaje de éxito
-                MostrarMensaje("Receta creada exitosamente.");
+                //MostrarMensaje("Receta creada exitosamente.");
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MostrarMensaje("No tienes permiso para realizar esta acción. Por favor, inicia sesión nuevamente.");
+                Debug.WriteLine("Error al crear la receta: " + ex.Message);
+
             }
             catch (Exception ex)
             {
-                // Mostrar un mensaje de error si ocurre alguna excepción
+                
                 MostrarMensaje($"Error al crear la receta: {ex.Message}");
             }
         }
