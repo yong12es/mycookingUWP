@@ -21,6 +21,7 @@ using Windows.UI.Xaml.Navigation;
 using System.Diagnostics;
 using System.Net.Http.Headers;
 using mycooking.Services;
+using mycooking.Models;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,7 +32,7 @@ namespace mycooking.Views
     /// </summary>
     public sealed partial class CrearRecetaPage : Page
     {
-        private const string apiUrl = "http://localhost:9098/recetas";
+        
         private StorageFile imagenSeleccionada;
         private ApiService _apiService;
 
@@ -65,86 +66,43 @@ namespace mycooking.Views
 
         private async void CrearReceta_Click(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine("Iniciando el proceso para crear una nueva receta...");
+           
+            try
+            {
+             //De aqui no pasa  
+                if (string.IsNullOrEmpty(_apiService.AccessToken))
+                {
+                    // El token de acceso está vacío, mostrar un mensaje de error
 
-            // Obtener los datos de la receta de los controles de la interfaz de usuario
-            string nombre = NombreRecetaTextBox.Text;
+                    Debug.WriteLine("_accestoken:" + _apiService._accessToken);
+                    Debug.WriteLine("AccesToekn" + _apiService.AccessToken);
+                    MostrarMensaje("Debe iniciar sesión antes de crear una receta Receta.Page El token de acceso está vacío.");
+                    return;
+                }
+
+                string nombre = NombreRecetaTextBox.Text;
             string descripcion = DescripcionTextBox.Text;
             string instrucciones = InstruccionesTextBox.Text;
-            
-            string imagenBase64 = "";
 
-            Debug.WriteLine($"Nombre de la receta: {nombre}");
-            Debug.WriteLine($"Descripción: {descripcion}");
-            Debug.WriteLine($"Instrucciones: {instrucciones}");
-            Debug.WriteLine($"Token de acceso: {_apiService._accessToken}");
-
-            if (imagenSeleccionada != null)
+            // Crear la receta
+            Receta receta = new Receta
             {
-                // Leer el contenido del archivo como una matriz de bytes
-                byte[] imagenBytes;
-                using (var stream = await imagenSeleccionada.OpenReadAsync())
-                {
-                    imagenBytes = new byte[stream.Size];
-                    await stream.ReadAsync(imagenBytes.AsBuffer(), (uint)stream.Size, InputStreamOptions.None);
-                }
+                Nombre = nombre,
+                Descripcion = descripcion,
+                Instrucciones = instrucciones
+            };
 
-                // Convertir la imagen a una cadena base64
-                imagenBase64 = Convert.ToBase64String(imagenBytes);
+           
+                // Crear la receta usando ApiService
+                await _apiService.CrearReceta(receta);
+
+                // Mostrar un mensaje de éxito
+                MostrarMensaje("Receta creada exitosamente.");
             }
-            Debug.WriteLine($"Imagen base64: {imagenBase64}");
-
-
-
-            // Crear un objeto JSON con los datos de la receta
-            string jsonBody = $"{{\"nombre\":\"{nombre}\",\"descripcion\":\"{descripcion}\",\"instrucciones\":\"{instrucciones}\",\"imagen\":\"{imagenBase64}\"}}";
-
-            using (HttpClient client = new HttpClient())
+            catch (Exception ex)
             {
-                try
-                {
-                    if (string.IsNullOrEmpty(_apiService._accessToken))
-                    {
-                        // El token de acceso está vacío, por lo que no podemos continuar
-                        MostrarMensaje("El token de acceso está vacío. Inicia sesión primero.");
-                        return;
-                    }
-                    // Configurar el encabezado de la solicitud para indicar que el cuerpo es JSON
-                    client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-
-                    // Crear el contenido de la solicitud HTTP con el cuerpo JSON
-                    HttpContent content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
-                    string accessToken = _apiService.AccessToken;
-
-                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
-                    // Realizar la solicitud HTTP POST a la API para crear la nueva receta
-                    HttpResponseMessage response = await client.PostAsync(apiUrl, content);
-
-                    // Verificar si la solicitud fue exitosa (código de estado 201 Created)
-                    if (response.IsSuccessStatusCode)
-                    {
-                        
-                        MostrarMensaje("Receta creada exitosamente."); 
-                    }
-                    else
-                    {
-                        // Si la solicitud no fue exitosa, mostrar un mensaje de error basado en el código de estado
-                        string errorMessage = await response.Content.ReadAsStringAsync();
-                        MostrarMensaje($"Hubo un error al crear la receta. Código de estado: {response.StatusCode}. Detalles: {errorMessage}");
-                    }
-                }
-                catch (HttpRequestException ex)
-                {
-                    MostrarMensaje($"Error de solicitud HTTP: {ex.Message}");
-                }
-                catch (Exception ex)
-                {
-                    // Manejar cualquier excepción que ocurra durante la solicitud HTTP
-                    
-                    MostrarMensaje("se produje un error al crear la receta. Detalles:" + ex.Message);
-                }
-
+                // Mostrar un mensaje de error si ocurre alguna excepción
+                MostrarMensaje($"Error al crear la receta: {ex.Message}");
             }
         }
 
@@ -158,7 +116,6 @@ namespace mycooking.Views
             filePicker.FileTypeFilter.Add(".png");
             filePicker.FileTypeFilter.Add(".jpg");
 
-            // Mostrar el FileOpenPicker y esperar a que el usuario seleccione un archivo
             imagenSeleccionada = await filePicker.PickSingleFileAsync();
             if (imagenSeleccionada != null)
             {

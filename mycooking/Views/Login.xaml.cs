@@ -34,7 +34,7 @@ namespace mycooking.Views
             this.InitializeComponent();
             _apiService = new ApiService();
         }
-        private async void LoginButton_Click(object sender, RoutedEventArgs e)
+     private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string correo = txtUsername.Text;
             string contrasenya = txtPassword.Password;
